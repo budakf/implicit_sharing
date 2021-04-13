@@ -1,0 +1,31 @@
+{
+    "name": "cpp_dev",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service":"devenv",
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "workspaceFolder": "/workspace",
+    "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+    "extensions":[
+        "ms-vscode.cpptools",
+        "shakram02.bash-beautify",
+        "davidbroetje.algorithm-mnemonics-vscode",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "ms-python.python",
+        "sidneys1.gitconfig",
+        "yzhang.markdown-all-in-one",
+        "yzane.markdown-pdf",
+        "davidanson.vscode-markdownlint",
+        "rpinski.shebang-snippets",
+        "bmuskalla.vscode-tldr",
+        "gruntfuggly.todo-tree",
+        "visualstudioexptteam.vscodeintellicode",
+        "hbenl.vscode-test-explorer",
+        "ms-vscode.wordcount",
+        "llvm-vs-code-extensions.vscode-clangd",
+        "fredericbonnet.cmake-test-adapter",
+        "jeff-hykin.better-cpp-syntax"
+    ]
+}
